@@ -1,0 +1,10 @@
+/*Создайте базу данных example, разместите в ней таблицу users, состоящую из двух столбцов, числового id и строкового name. */
+
+mysql> create database example;
+Query OK, 1 row affected (0.01 sec)
+mysql> use example
+Database changed
+mysql> CREATE TABLE `users` (`id` int NOT NULL,  `name` varchar(100) NOT NULL);
+Query OK, 0 rows affected (0.05 sec)
+mysql> exit
+Bye

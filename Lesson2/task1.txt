@@ -1,0 +1,13 @@
+/*Установите СУБД MySQL. Создайте в домашней директории файл .my.cnf, задав в нем логин и пароль, который указывался при установке. */
+
+[client]
+user=root
+password="1q2w3e4r"
+
+[mysql]
+user=root
+password="1q2w3e4r"
+
+[mysqldump]
+user=root
+password="1q2w3e4r"
