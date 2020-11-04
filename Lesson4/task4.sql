@@ -189,7 +189,7 @@ order by u2.firstname
 /*
 iii. Написать скрипт, отмечающий несовершеннолетних пользователей как неактивных (поле is_active = false). Предварительно добавить такое поле в таблицу profiles со значением по умолчанию = true (или 1)
 */
-
+ ALTER TABLE vk.users ADD is_active BOOL DEFAULT TRUE NULL;
  update users u
    inner join profiles p on p.user_id =u.id 
    set u.is_active =case when TIMESTAMPDIFF(YEAR, p.birthday, now()) < 18 then false else true end;
